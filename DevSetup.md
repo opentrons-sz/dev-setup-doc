@@ -212,6 +212,8 @@ make setup
 1. 进入目录执行mingw-get.exe
 
 2. 选择和make相关的package
+
+3. installation - apply change
 ```
 
 ![image-20230321152628441](IMG/image-20230321152628441.png)
@@ -356,6 +358,25 @@ PYENV_ROOT  C:\pyenv-win
 
 3. 执行目录
 
+   ```python
+   # 安装pipenv
+   pip install pipenv
+   ```
+
+   ```shell
+   # 配置config
+   1. cd ~/.ssh
+   2. touch config
+   3. vi config
+   4. 输入如下配置
+   Host *
+   HostkeyAlgorithms +ssh-rsa
+   PubkeyAcceptedKeyTypes +ssh-rsa
+   # 避免git bash登录远程主机被限制
+   ```
+
+   
+
    ```shell
    cd hardware-testing
    npm install --global yarn@1
@@ -363,7 +384,21 @@ PYENV_ROOT  C:\pyenv-win
    make setup # 创建pipenv虚拟环境，安装python模块
    ```
 
-4. 如何在VScode配置终端
+1. 可以更改镜像源提高下载速度（hardware-testing/Pipfile）：
+
+   ```tex
+   https://pypi.douban.com/simple/
+   ```
+
+   ![image-20230406140331255](IMG/image-20230406140331255.png)
+
+   
+
+   查看依赖是否装上
+
+   ![image-20230406140130911](IMG/image-20230406140130911.png)
+
+1. 如何在VScode配置终端
 
    ![image-20230404164450235](IMG/image-20230404164450235.png)
 
