@@ -46,7 +46,7 @@ irm get.scoop.sh | iex
 　　4.在终端，执行以下命令 make -v，将出现Make版本信息：
 ```
 
-![image-20230321152628441](IMG\image-20230321152628441.png)
+![image-20230321152628441](IMG/image-20230321152628441.png)
 
 也可以： make.exe download
 
